@@ -17,14 +17,11 @@
 
 ## 📦 安装
 
-### 方式一：从 VSCode Marketplace 安装（推荐）
+### 方式一：从 VSCode Marketplace 安装
 
-1. 打开 VSCode
-2. 按 `Ctrl+Shift+X`（Mac: `Cmd+Shift+X`）打开扩展面板
-3. 搜索 "Cursor Sync"
-4. 点击 "Install" 安装
+> ⚠️ **注意**: 本扩展暂未上架 VSCode Marketplace，请使用方式二进行安装。
 
-### 方式二：从 VSIX 文件安装
+### 方式二：从 VSIX 文件安装（推荐）
 
 详细安装步骤请参考 [INSTALL.md](INSTALL.md)
 
