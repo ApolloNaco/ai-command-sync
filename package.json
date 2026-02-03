@@ -1,0 +1,120 @@
+{
+  "name": "cursor-sync",
+  "displayName": "Cursor Sync",
+  "description": "Sync custom commands for Cursor AI from Git repositories",
+  "version": "1.0.0",
+  "publisher": "Genyuan",
+  "author": {
+    "name": "Genyuan",
+    "url": "https://juejin.cn/user/Genyuan的AI工程"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cursor",
+    "sync",
+    "commands",
+    "git",
+    "ai"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorSync.syncNow",
+        "title": "Cursor Sync: Sync Now"
+      },
+      {
+        "command": "cursorSync.viewHistory",
+        "title": "Cursor Sync: View Sync History"
+      },
+      {
+        "command": "cursorSync.openSettings",
+        "title": "Cursor Sync: Open Settings"
+      },
+      {
+        "command": "cursorSync.toggleAutoSync",
+        "title": "Cursor Sync: Toggle Auto Sync"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor Sync",
+      "properties": {
+        "cursorSync.autoSync": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable automatic synchronization"
+        },
+        "cursorSync.autoSyncInterval": {
+          "type": "number",
+          "default": 7,
+          "description": "Auto sync interval in days"
+        },
+        "cursorSync.showNotification": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notifications after sync"
+        },
+        "cursorSync.enablePrompt": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show sync prompt on startup"
+        },
+        "cursorSync.gitRepo": {
+          "type": "string",
+          "default": "https://github.com/ApolloNaco/AITools.git",
+          "description": "Git repository URL"
+        },
+        "cursorSync.remotePath": {
+          "type": "string",
+          "default": "cursor/commands",
+          "description": "Remote path in the repository"
+        },
+        "cursorSync.localPath": {
+          "type": "string",
+          "default": ".cursor/commands",
+          "description": "Local path relative to workspace"
+        },
+        "cursorSync.branch": {
+          "type": "string",
+          "default": "master",
+          "description": "Git branch to sync from"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "simple-git": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "@vscode/test-electron": "^2.3.0",
+    "@vscode/vsce": "^2.19.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ApolloNaco/cursor-sync"
+  },
+  "license": "MIT"
+}
