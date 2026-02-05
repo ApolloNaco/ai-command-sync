@@ -5,6 +5,12 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [1.0.1] - 2026-02-05
+
+### 🔧 修复
+
+- **发布者信息**: 修正 publisher 为 `ApolloNaco`，与 OpenVSX 账户匹配，消除未验证发布者警告
+
 ## [1.0.0] - 2026-02-05
 
 ### 🎉 首次发布

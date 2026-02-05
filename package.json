@@ -2,8 +2,8 @@
   "name": "ai-command-sync",
   "displayName": "AI Command Sync",
   "description": "Sync AI custom commands and configurations from Git repositories",
-  "version": "1.0.0",
-  "publisher": "Genyuan",
+  "version": "1.0.1",
+  "publisher": "ApolloNaco",
   "author": {
     "name": "Genyuan",
     "url": "https://github.com/ApolloNaco"
