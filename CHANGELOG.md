@@ -9,7 +9,7 @@
 
 ### 🎉 首次发布
 
-这是 AI Command Sync 的首个正式版本！
+这是 AI Command Sync 的首个正式版本！一个强大的 VSCode/Cursor 扩展，用于从 Git 仓库同步 AI 编辑器的自定义命令和配置。
 
 ### ✨ 新增功能
 
