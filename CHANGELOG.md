@@ -1,20 +1,20 @@
 # 更新日志
 
-所有 Cursor Sync 扩展的重要变更都将记录在此文件中。
+所有 AI Command Sync 扩展的重要变更都将记录在此文件中。
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 并且本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
-## [1.0.0] - 2026-02-03
+## [1.0.0] - 2026-02-05
 
 ### 🎉 首次发布
 
-这是 Cursor Sync 的首个正式版本！
+这是 AI Command Sync 的首个正式版本！
 
 ### ✨ 新增功能
 
 #### 核心功能
-- **Git 仓库同步**: 从 Git 仓库同步 Cursor AI 自定义命令
+- **Git 仓库同步**: 从 Git 仓库同步 AI 编辑器自定义命令和配置
 - **智能增量同步**: 使用 MD5 哈希比对，只同步变更文件
 - **文件保护机制**: 不删除本地独有文件，保护本地修改
 - **浅克隆优化**: 使用 `--depth=1` 参数，加快克隆速度
@@ -166,10 +166,10 @@
 
 如果您有任何建议或发现问题，欢迎：
 
-- 提交 [GitHub Issue](https://github.com/ApolloNaco/cursor-sync/issues)
+- 提交 [GitHub Issue](https://github.com/ApolloNaco/ai-command-sync/issues)
 - 访问 [掘金主页](https://juejin.cn/user/Genyuan的AI工程) 留言
-- 发起 [Pull Request](https://github.com/ApolloNaco/cursor-sync/pulls)
+- 发起 [Pull Request](https://github.com/ApolloNaco/ai-command-sync/pulls)
 
 ---
 
-**感谢使用 Cursor Sync！** 🎉
+**感谢使用 AI Command Sync！** 🎉

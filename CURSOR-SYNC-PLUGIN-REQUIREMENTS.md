@@ -1,4 +1,4 @@
-# Cursor Sync 插件开发完整需求文档
+# AI Command Sync 插件开发完整需求文档
 
 ## 📋 项目概述
 
@@ -19,8 +19,8 @@
 
 ### 2. 手动同步
 - **触发方式**：
-  - 点击状态栏的 Cursor Sync 图标
-  - 命令面板：`Cursor Sync: Sync Now`
+  - 点击状态栏的 AI Command Sync 图标
+  - 命令面板：`AI Command Sync: Sync Now`
 - **功能**：从 Git 仓库同步配置文件到本地
 
 ### 3. 自动同步
@@ -53,7 +53,7 @@
 ### 7. 同步历史
 - **功能**：记录最近 20 次同步记录
 - **内容**：时间戳、新增/更新/未变更文件数
-- **查看方式**：命令面板 `Cursor Sync: View History`
+- **查看方式**：命令面板 `AI Command Sync: View History`
 
 ---
 
@@ -62,8 +62,8 @@
 ### 扩展基本信息
 ```json
 {
-  "name": "cursor-sync-extension",
-  "displayName": "Cursor Sync",
+  "name": "ai-command-sync-extension",
+  "displayName": "AI Command Sync",
   "description": "自动同步 Cursor 命令配置文件",
   "version": "1.0.0",
   "publisher": "Genyuan",
@@ -108,10 +108,10 @@
 
 | 命令 ID | 命令名称 | 功能 |
 |---------|---------|------|
-| `cursorSync.syncNow` | Cursor Sync: Sync Now | 立即执行同步 |
-| `cursorSync.viewHistory` | Cursor Sync: View History | 查看同步历史 |
-| `cursorSync.openSettings` | Cursor Sync: Open Settings | 打开扩展设置 |
-| `cursorSync.toggleAutoSync` | Cursor Sync: Toggle Auto Sync | 切换自动同步开关 |
+| `cursorSync.syncNow` | AI Command Sync: Sync Now | 立即执行同步 |
+| `cursorSync.viewHistory` | AI Command Sync: View History | 查看同步历史 |
+| `cursorSync.openSettings` | AI Command Sync: Open Settings | 打开扩展设置 |
+| `cursorSync.toggleAutoSync` | AI Command Sync: Toggle Auto Sync | 切换自动同步开关 |
 | `cursorSync.showQuickPick` | （内部命令） | 显示快捷菜单 |
 
 ---
@@ -325,7 +325,7 @@ node_modules/**/*.md
 ## 🎯 完整开发步骤总结
 
 ### 阶段一：项目初始化
-1. 创建项目目录 `cursor-sync-extension/`
+1. 创建项目目录 `ai-command-sync-extension/`
 2. 初始化 `package.json`
 3. 配置 `tsconfig.json`
 4. 创建 `.vscodeignore`

@@ -1,12 +1,12 @@
-# Cursor Sync 快速开始
+# AI Command Sync 快速开始
 
-5 分钟快速上手 Cursor Sync，让您的 Cursor AI 自定义命令管理变得简单高效。
+5 分钟快速上手 AI Command Sync，让您的 Cursor AI 自定义命令管理变得简单高效。
 
 ## 🎯 开始前的准备
 
 在开始之前，请确保：
 
-- ✅ 已安装 Cursor Sync 扩展（查看 [INSTALL.md](INSTALL.md)）
+- ✅ 已安装 AI Command Sync 扩展（查看 [INSTALL.md](INSTALL.md)）
 - ✅ 系统已安装 Git 并添加到 PATH
 - ✅ 有可访问的 Git 仓库（或使用默认仓库）
 
@@ -16,11 +16,11 @@
 
 安装扩展后，重新打开 VSCode 或打开任意工作区，您会看到：
 
-1. **状态栏图标**: 右下角显示 "$(cloud-download) Cursor Sync"
+1. **状态栏图标**: 右下角显示 "$(cloud-download) AI Command Sync"
 2. **启动提示**: 2-3 秒后弹出提示窗口：
 
 ```
-Cursor Sync: 检测到您的自定义命令可能需要同步。
+AI Command Sync: 检测到您的自定义命令可能需要同步。
 [立即同步] [稍后提醒] [启用自动同步] [不再提示]
 ```
 
@@ -45,7 +45,7 @@ Cursor Sync: 检测到您的自定义命令可能需要同步。
 
 #### 方式 A: 使用状态栏菜单
 
-点击状态栏的 "Cursor Sync" 图标，会弹出快捷菜单：
+点击状态栏的 "AI Command Sync" 图标，会弹出快捷菜单：
 
 ```
 $(sync) 立即同步
@@ -55,7 +55,7 @@ $(history) 查看同步历史
   查看最近的同步记录
 
 $(gear) 打开设置
-  配置 Cursor Sync
+  配置 AI Command Sync
 
 $(debug-start) 启用自动同步
   当前状态：已禁用
@@ -65,12 +65,12 @@ $(debug-start) 启用自动同步
 
 #### 方式 B: 使用命令面板
 
-按 `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)，输入 "Cursor Sync"：
+按 `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)，输入 "AI Command Sync"：
 
-- `Cursor Sync: Sync Now` - 立即同步
-- `Cursor Sync: View Sync History` - 查看历史
-- `Cursor Sync: Open Settings` - 打开设置
-- `Cursor Sync: Toggle Auto Sync` - 切换自动同步
+- `AI Command Sync: Sync Now` - 立即同步
+- `AI Command Sync: View Sync History` - 查看历史
+- `AI Command Sync: Open Settings` - 打开设置
+- `AI Command Sync: Toggle Auto Sync` - 切换自动同步
 
 ### 第 4 步：配置自动同步（1 分钟）
 
@@ -78,7 +78,7 @@ $(debug-start) 启用自动同步
 
 #### 方法 1: 通过快捷菜单
 
-1. 点击状态栏的 Cursor Sync 图标
+1. 点击状态栏的 AI Command Sync 图标
 2. 选择 "启用自动同步"
 3. 完成！扩展会每隔 7 天自动检查并同步
 
@@ -95,7 +95,7 @@ $(debug-start) 启用自动同步
 
 1. **打开设置**: 
    - 快捷键: `Ctrl+,` (Mac: `Cmd+,`)
-   - 搜索: "Cursor Sync"
+   - 搜索: "AI Command Sync"
 
 2. **修改关键配置**:
 
@@ -139,7 +139,7 @@ $(debug-start) 启用自动同步
 
 **步骤**:
 1. 将自定义命令推送到个人 Git 仓库
-2. 在两台电脑上安装 Cursor Sync
+2. 在两台电脑上安装 AI Command Sync
 3. 配置相同的仓库地址
 4. 启用自动同步
 
@@ -154,7 +154,7 @@ $(debug-start) 启用自动同步
 
 **步骤**:
 1. 创建 Git 仓库作为备份存储
-2. 配置 Cursor Sync 同步到仓库
+2. 配置 AI Command Sync 同步到仓库
 3. 设置较短的自动同步间隔（如 1 天）
 
 **好处**:
@@ -169,7 +169,7 @@ $(debug-start) 启用自动同步
 **创建键盘快捷键**:
 
 1. `Ctrl+K Ctrl+S` (Mac: `Cmd+K Cmd+S`) 打开键盘快捷键
-2. 搜索 "Cursor Sync: Sync Now"
+2. 搜索 "AI Command Sync: Sync Now"
 3. 设置快捷键，如 `Ctrl+Alt+S`
 
 现在可以快速执行同步！
@@ -180,7 +180,7 @@ $(debug-start) 启用自动同步
 
 1. `Ctrl+Shift+U` (Mac: `Cmd+Shift+U`) 打开输出面板
 2. 选择 "Extension Host" 或 "Tasks"
-3. 查看 Cursor Sync 的日志输出
+3. 查看 AI Command Sync 的日志输出
 
 ### 技巧 3: 选择性同步
 
@@ -200,7 +200,7 @@ $(debug-start) 启用自动同步
 
 ### 技巧 4: 本地修改保护
 
-Cursor Sync **不会删除**本地独有文件，所以您可以：
+AI Command Sync **不会删除**本地独有文件，所以您可以：
 
 - 在同步的目录中添加本地专属配置
 - 修改同步的文件，再次同步时会被覆盖
@@ -276,7 +276,7 @@ rm -rf .cursor/commands
 
 | 图标 | 说明 | 操作建议 |
 |------|------|----------|
-| 🔵 $(cloud-download) Cursor Sync | 尚未同步 | 点击执行首次同步 |
+| 🔵 $(cloud-download) AI Command Sync | 尚未同步 | 点击执行首次同步 |
 | 🔄 $(sync~spin) 同步中... | 正在同步 | 等待完成 |
 | ✅ $(check) 已同步 (X前) | 同步成功 | 无需操作 |
 | ❌ $(error) 同步失败 | 同步出错 | 点击查看错误并重试 |
@@ -292,7 +292,7 @@ rm -rf .cursor/commands
 
 ## 🎉 下一步
 
-恭喜！您已经掌握了 Cursor Sync 的基本使用。现在您可以：
+恭喜！您已经掌握了 AI Command Sync 的基本使用。现在您可以：
 
 - ✅ 手动执行同步
 - ✅ 启用自动同步
@@ -304,5 +304,5 @@ rm -rf .cursor/commands
 ---
 
 如有任何问题，欢迎：
-- 提交 [Issue](https://github.com/ApolloNaco/cursor-sync/issues)
+- 提交 [Issue](https://github.com/ApolloNaco/ai-command-sync/issues)
 - 访问 [掘金](https://juejin.cn/user/Genyuan的AI工程) 交流

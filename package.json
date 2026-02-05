@@ -1,7 +1,7 @@
 {
-  "name": "cursor-sync",
-  "displayName": "Cursor Sync",
-  "description": "Sync custom commands for Cursor AI from Git repositories",
+  "name": "ai-command-sync",
+  "displayName": "AI Command Sync",
+  "description": "Sync AI custom commands and configurations from Git repositories",
   "version": "1.0.0",
   "publisher": "Genyuan",
   "author": {
@@ -17,18 +17,18 @@
     "Productivity"
   ],
   "keywords": [
-    "cursor",
-    "sync",
-    "commands",
-    "git",
     "ai",
+    "commands",
+    "sync",
+    "cursor",
+    "git",
     "automation",
     "workspace",
     "configuration"
   ],
-  "homepage": "https://github.com/ApolloNaco/cursor-sync#readme",
+  "homepage": "https://github.com/ApolloNaco/ai-command-sync#readme",
   "bugs": {
-    "url": "https://github.com/ApolloNaco/cursor-sync/issues"
+    "url": "https://github.com/ApolloNaco/ai-command-sync/issues"
   },
   "galleryBanner": {
     "color": "#0078D7",
@@ -129,7 +129,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ApolloNaco/cursor-sync"
+    "url": "https://github.com/ApolloNaco/ai-command-sync"
   },
   "license": "MIT"
 }

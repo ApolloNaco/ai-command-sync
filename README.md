@@ -1,9 +1,9 @@
-# Cursor Sync
+# AI Command Sync
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ApolloNaco/cursor-sync)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/ApolloNaco/ai-command-sync)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-一个强大的 VSCode 扩展，用于同步 Cursor AI 的自定义命令和配置文件。通过 Git 仓库自动管理和更新您的 Cursor 自定义命令，让团队协作和配置共享变得简单高效。
+一个强大的 VSCode/Cursor 扩展，用于同步 AI 编辑器的自定义命令和配置文件。通过 Git 仓库自动管理和更新您的 AI 自定义命令，让团队协作和配置共享变得简单高效。
 
 ## ✨ 功能特性
 
@@ -64,7 +64,7 @@
 
 扩展会在 VSCode 右下角状态栏显示同步状态：
 
-- 🔵 **$(cloud-download) Cursor Sync**: 尚未同步
+- 🔵 **$(cloud-download) AI Command Sync**: 尚未同步
 - 🔄 **$(sync~spin) 同步中...**: 正在执行同步
 - ✅ **$(check) 已同步 (X小时前)**: 同步成功
 - ❌ **$(error) 同步失败**: 同步出错（红色背景）
@@ -73,16 +73,16 @@
 
 ### 命令面板
 
-按 `Ctrl+Shift+P`（Mac: `Cmd+Shift+P`）打开命令面板，输入 "Cursor Sync" 查看所有可用命令：
+按 `Ctrl+Shift+P`（Mac: `Cmd+Shift+P`）打开命令面板，输入 "AI Command Sync" 查看所有可用命令：
 
-- **Cursor Sync: Sync Now** - 立即执行同步
-- **Cursor Sync: View Sync History** - 查看同步历史记录
-- **Cursor Sync: Open Settings** - 打开扩展设置
-- **Cursor Sync: Toggle Auto Sync** - 切换自动同步开关
+- **AI Command Sync: Sync Now** - 立即执行同步
+- **AI Command Sync: View Sync History** - 查看同步历史记录
+- **AI Command Sync: Open Settings** - 打开扩展设置
+- **AI Command Sync: Toggle Auto Sync** - 切换自动同步开关
 
 ### 快捷菜单
 
-点击状态栏的 Cursor Sync 图标，可以快速访问：
+点击状态栏的 AI Command Sync 图标，可以快速访问：
 
 1. 立即同步
 2. 查看同步历史
@@ -91,7 +91,7 @@
 
 ## ⚙️ 配置选项
 
-在 VSCode 设置中搜索 "Cursor Sync" 可以找到以下配置项：
+在 VSCode 设置中搜索 "AI Command Sync" 可以找到以下配置项：
 
 ### 基础配置
 
@@ -181,10 +181,10 @@ A: 启用自动同步后，扩展会：
 
 如果您在使用过程中遇到问题或有建议，欢迎：
 
-- 提交 [Issue](https://github.com/ApolloNaco/cursor-sync/issues)
-- 发起 [Pull Request](https://github.com/ApolloNaco/cursor-sync/pulls)
+- 提交 [Issue](https://github.com/ApolloNaco/ai-command-sync/issues)
+- 发起 [Pull Request](https://github.com/ApolloNaco/ai-command-sync/pulls)
 - 在掘金留言交流
 
 ---
 
-**享受高效的 Cursor 配置同步体验！** 🎉
+**享受高效的 AI 命令配置同步体验！** 🎉

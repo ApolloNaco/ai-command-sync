@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Cursor Sync 发布脚本
+# AI Command Sync 发布脚本
 # 用于自动化发布流程
 
 set -e  # 遇到错误立即退出
@@ -139,7 +139,7 @@ package_extension() {
     fi
     
     version=$(get_version)
-    vsix_file="cursor-sync-${version}.vsix"
+    vsix_file="ai-command-sync-${version}.vsix"
     
     if [ ! -f "$vsix_file" ]; then
         print_error "VSIX 文件不存在: $vsix_file"
@@ -155,7 +155,7 @@ publish_to_openvsx() {
     print_info "准备发布到 OpenVSX..."
     
     version=$(get_version)
-    vsix_file="cursor-sync-${version}.vsix"
+    vsix_file="ai-command-sync-${version}.vsix"
     
     # 检查环境变量中的 token
     if [ -z "$OVSX_TOKEN" ]; then
@@ -175,7 +175,7 @@ publish_to_openvsx() {
     if ovsx publish "$vsix_file" -p "$OVSX_TOKEN"; then
         print_success "发布成功！🎉"
         print_info "扩展将在几小时内出现在 OpenVSX 和 Cursor 市场"
-        print_info "查看扩展: https://open-vsx.org/extension/Genyuan/cursor-sync"
+        print_info "查看扩展: https://open-vsx.org/extension/Genyuan/ai-command-sync"
     else
         print_error "发布失败"
         exit 1
@@ -221,7 +221,7 @@ show_summary() {
     
     echo ""
     print_success "==============================================="
-    print_success "   Cursor Sync v${version} 发布完成！🚀"
+    print_success "   AI Command Sync v${version} 发布完成！🚀"
     print_success "==============================================="
     echo ""
     
@@ -233,8 +233,8 @@ show_summary() {
     echo ""
     
     print_info "链接:"
-    echo "  • OpenVSX: https://open-vsx.org/extension/Genyuan/cursor-sync"
-    echo "  • GitHub: https://github.com/ApolloNaco/cursor-sync"
+    echo "  • OpenVSX: https://open-vsx.org/extension/Genyuan/ai-command-sync"
+    echo "  • GitHub: https://github.com/ApolloNaco/ai-command-sync"
     echo ""
 }
 
@@ -242,7 +242,7 @@ show_summary() {
 main() {
     echo ""
     print_info "=========================================="
-    print_info "   Cursor Sync 发布脚本"
+    print_info "   AI Command Sync 发布脚本"
     print_info "=========================================="
     echo ""
     
@@ -279,7 +279,7 @@ main() {
     else
         print_info "已跳过发布步骤"
         print_info "手动发布命令:"
-        echo "  ovsx publish cursor-sync-${version}.vsix -p \$OVSX_TOKEN"
+        echo "  ovsx publish ai-command-sync-${version}.vsix -p \$OVSX_TOKEN"
         echo ""
     fi
 }

@@ -1,6 +1,6 @@
-# Cursor Sync 开发者文档
+# AI Command Sync 开发者文档
 
-本文档面向想要参与 Cursor Sync 开发、贡献代码或进行二次开发的开发者。
+本文档面向想要参与 AI Command Sync 开发、贡献代码或进行二次开发的开发者。
 
 ## 📋 目录
 
@@ -81,8 +81,8 @@ SyncManager.saveHistory() → 保存历史
 ### 克隆项目
 
 ```bash
-git clone https://github.com/ApolloNaco/cursor-sync.git
-cd cursor-sync
+git clone https://github.com/ApolloNaco/ai-command-sync.git
+cd ai-command-sync
 ```
 
 ### 安装依赖
@@ -117,7 +117,7 @@ npm run watch
 ## 📁 项目结构
 
 ```
-cursor-sync/
+ai-command-sync/
 ├── .vscode/
 │   └── launch.json          # 调试配置
 ├── src/
@@ -233,7 +233,7 @@ interface SyncHistoryEntry {
 **同步流程**:
 
 ```typescript
-1. 创建临时目录: .cursor-sync-${timestamp}
+1. 创建临时目录: .ai-command-sync-${timestamp}
 2. Git 浅克隆:
    git clone --depth=1 -b <branch> --single-branch <repo> <tempDir>
 3. 验证远程路径存在
@@ -277,7 +277,7 @@ shouldCopyFile(remotePath, localPath): {copy, isNew} {
 
 | Status | Icon | Text | Color |
 |--------|------|------|-------|
-| NotSynced | cloud-download | Cursor Sync | 默认 |
+| NotSynced | cloud-download | AI Command Sync | 默认 |
 | Syncing | sync~spin | 同步中... | 默认 |
 | Success | check | 已同步 (X前) | 默认 |
 | Failed | error | 同步失败 | 红色背景 |
@@ -449,7 +449,7 @@ context.subscriptions.push(
     "commands": [
       {
         "command": "cursorSync.clearHistory",
-        "title": "Cursor Sync: Clear History"
+        "title": "AI Command Sync: Clear History"
       }
     ]
   }
@@ -571,7 +571,7 @@ const mockGit = {
 console.log('Sync starting...', config);
 
 // 生产环境考虑使用输出通道
-const outputChannel = vscode.window.createOutputChannel('Cursor Sync');
+const outputChannel = vscode.window.createOutputChannel('AI Command Sync');
 outputChannel.appendLine('Sync completed');
 outputChannel.show();
 ```
@@ -588,7 +588,7 @@ outputChannel.show();
 **检查扩展是否激活**:
 
 ```typescript
-const ext = vscode.extensions.getExtension('Genyuan.cursor-sync');
+const ext = vscode.extensions.getExtension('Genyuan.ai-command-sync');
 console.log('Extension active:', ext?.isActive);
 ```
 
@@ -629,7 +629,7 @@ npm run package
 npx vsce package
 ```
 
-这会生成 `cursor-sync-1.0.0.vsix` 文件。
+这会生成 `ai-command-sync-1.0.0.vsix` 文件。
 
 ### 打包检查清单
 
@@ -873,4 +873,4 @@ npx vsce publish
 
 ---
 
-**感谢您对 Cursor Sync 的贡献！** 🎉
+**感谢您对 AI Command Sync 的贡献！** 🎉

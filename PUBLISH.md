@@ -1,6 +1,6 @@
 # 发布指南 / Publishing Guide
 
-本文档提供了发布 Cursor Sync 扩展到 OpenVSX 市场的详细步骤。
+本文档提供了发布 AI Command Sync 扩展到 OpenVSX 市场的详细步骤。
 
 ## 📋 发布前检查清单
 
@@ -49,7 +49,7 @@
 1. 登录后，点击右上角头像，选择 "Settings"
 2. 找到 "Access Tokens" 部分
 3. 点击 "Create Access Token"
-4. 输入 token 名称（例如：cursor-sync-publish）
+4. 输入 token 名称（例如：ai-command-sync-publish）
 5. 保存生成的 token（**请妥善保管，只显示一次！**）
 
 ### 步骤 3: 安装发布工具
@@ -104,14 +104,14 @@ ls -la out/
 # 打包成 VSIX 文件
 npm run package
 
-# 会生成: cursor-sync-1.0.0.vsix
+# 会生成: ai-command-sync-1.0.0.vsix
 ```
 
 ### 步骤 8: 发布到 OpenVSX
 
 ```bash
 # 方式 1: 发布 VSIX 文件（推荐）
-ovsx publish cursor-sync-1.0.0.vsix -p YOUR_TOKEN
+ovsx publish ai-command-sync-1.0.0.vsix -p YOUR_TOKEN
 
 # 方式 2: 直接发布（自动打包）
 ovsx publish -p YOUR_TOKEN
@@ -119,7 +119,7 @@ ovsx publish -p YOUR_TOKEN
 
 ### 步骤 9: 验证发布
 
-1. 访问 https://open-vsx.org/extension/Genyuan/cursor-sync
+1. 访问 https://open-vsx.org/extension/Genyuan/ai-command-sync
 2. 确认扩展信息显示正确
 3. 检查 README、图标、版本号等
 
@@ -127,7 +127,7 @@ ovsx publish -p YOUR_TOKEN
 
 1. 打开 Cursor IDE
 2. 打开扩展市场（Ctrl/Cmd + Shift + X）
-3. 搜索 "Cursor Sync"
+3. 搜索 "AI Command Sync"
 4. 安装并测试功能
 
 **注意**: 扩展可能需要几小时到一天的时间才会出现在 Cursor 市场中。
@@ -163,7 +163,7 @@ npm run compile
 npm run package
 
 # 发布
-ovsx publish cursor-sync-1.0.1.vsix -p YOUR_TOKEN
+ovsx publish ai-command-sync-1.0.1.vsix -p YOUR_TOKEN
 
 # 提交代码
 git add .
@@ -262,7 +262,7 @@ echo ""
 echo "Next steps:"
 echo "1. npm run compile"
 echo "2. npm run package"
-echo "3. ovsx publish cursor-sync-<version>.vsix -p YOUR_TOKEN"
+echo "3. ovsx publish ai-command-sync-<version>.vsix -p YOUR_TOKEN"
 ```
 
 ## 🎉 发布成功后

@@ -1,6 +1,6 @@
 # ✅ 准备就绪 - 可以发布了！
 
-恭喜！你的 Cursor Sync 扩展已经准备好发布到 OpenVSX 市场了。
+恭喜！你的 AI Command Sync 扩展已经准备好发布到 OpenVSX 市场了。
 
 ## 📋 已完成的准备工作
 
@@ -52,7 +52,7 @@ npm run publish
 npm run package
 
 # 2. 发布
-ovsx publish cursor-sync-1.0.0.vsix -p YOUR_TOKEN
+ovsx publish ai-command-sync-1.0.0.vsix -p YOUR_TOKEN
 
 # 3. 创建标签
 git tag v1.0.0
@@ -75,12 +75,12 @@ git push origin v1.0.0
 | 编译 | ✅ 成功 | 无错误，无警告 |
 | 依赖 | ✅ 已安装 | 296 个包，0 个漏洞 |
 | Publisher | `Genyuan` | 需要在 OpenVSX 创建此 namespace |
-| 仓库 | `github.com/ApolloNaco/cursor-sync` | 确保仓库存在且可访问 |
+| 仓库 | `github.com/ApolloNaco/ai-command-sync` | 确保仓库存在且可访问 |
 
 ## ⚠️ 发布前最后检查
 
 ### 必须做的事情：
-- [ ] 确保 GitHub 仓库 `ApolloNaco/cursor-sync` 存在且是公开的
+- [ ] 确保 GitHub 仓库 `ApolloNaco/ai-command-sync` 存在且是公开的
 - [ ] 在 OpenVSX 注册账户并创建 Access Token
 - [ ] 使用 Access Token 创建 `Genyuan` namespace
 
@@ -94,22 +94,22 @@ git push origin v1.0.0
 ### 1. 验证发布
 ```bash
 # 访问你的扩展页面
-open https://open-vsx.org/extension/Genyuan/cursor-sync
+open https://open-vsx.org/extension/Genyuan/ai-command-sync
 ```
 
 ### 2. 在 Cursor 中测试
 - 打开 Cursor IDE
-- 搜索 "Cursor Sync"（可能需要等待几小时）
+- 搜索 "AI Command Sync"（可能需要等待几小时）
 - 或者手动安装 VSIX 文件
 
 ### 3. 创建 GitHub Release
 ```bash
 # 在 GitHub 上创建 Release
-# 1. 访问: https://github.com/ApolloNaco/cursor-sync/releases/new
+# 1. 访问: https://github.com/ApolloNaco/ai-command-sync/releases/new
 # 2. 标签: v1.0.0
-# 3. 标题: Cursor Sync v1.0.0
+# 3. 标题: AI Command Sync v1.0.0
 # 4. 描述: 从 CHANGELOG.md 复制内容
-# 5. 附加: cursor-sync-1.0.0.vsix 文件
+# 5. 附加: ai-command-sync-1.0.0.vsix 文件
 ```
 
 ### 4. 宣传推广
@@ -178,7 +178,7 @@ npm run compile
 
 ### 需要帮助？
 
-- GitHub Issues: https://github.com/ApolloNaco/cursor-sync/issues
+- GitHub Issues: https://github.com/ApolloNaco/ai-command-sync/issues
 - OpenVSX 文档: https://github.com/eclipse/openvsx/wiki
 - Cursor 论坛: https://forum.cursor.com/
 

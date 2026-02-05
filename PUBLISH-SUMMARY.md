@@ -1,4 +1,4 @@
-# 🎉 Cursor Sync 发布准备完成！
+# 🎉 AI Command Sync 发布准备完成！
 
 ## ✅ 已完成的修复和优化
 
@@ -87,7 +87,7 @@ npm run publish
    ```
 
 3. **确保 GitHub 仓库存在**
-   - 仓库: https://github.com/ApolloNaco/cursor-sync
+   - 仓库: https://github.com/ApolloNaco/ai-command-sync
    - 确保是公开的或你有访问权限
 
 4. **发布！**
@@ -105,7 +105,7 @@ npm run publish
    ```
 
 2. **发布后创建 GitHub Release**
-   - 访问: https://github.com/ApolloNaco/cursor-sync/releases/new
+   - 访问: https://github.com/ApolloNaco/ai-command-sync/releases/new
    - 标签: v1.0.0
    - 附加 VSIX 文件
 
@@ -133,7 +133,7 @@ npm run publish
 
 ## ✨ 总结
 
-你的 Cursor Sync 扩展已经**100% 准备好发布**了！
+你的 AI Command Sync 扩展已经**100% 准备好发布**了！
 
 所有代码都已优化，文档齐全，脚本就绪。只需要：
 1. 在 OpenVSX 获取 Access Token

@@ -1,6 +1,6 @@
-# Cursor Sync 安装指南
+# AI Command Sync 安装指南
 
-本文档提供详细的 Cursor Sync 扩展安装指南，包括从 VSCode Marketplace 安装和本地 VSIX 文件安装两种方式。
+本文档提供详细的 AI Command Sync 扩展安装指南，包括从 VSCode Marketplace 安装和本地 VSIX 文件安装两种方式。
 
 ## 📋 前置要求
 
@@ -43,20 +43,20 @@ git --version
 在扩展搜索框中输入：
 
 ```
-Cursor Sync
+AI Command Sync
 ```
 
 #### 步骤 3: 安装
 
-1. 在搜索结果中找到 "Cursor Sync" (作者: Genyuan)
+1. 在搜索结果中找到 "AI Command Sync" (作者: Genyuan)
 2. 点击 "Install" 按钮
 3. 等待安装完成（通常只需几秒钟）
 
 #### 步骤 4: 验证安装
 
 安装完成后，您应该能在：
-- 扩展列表中看到 "Cursor Sync"
-- 状态栏右下角看到 "$(cloud-download) Cursor Sync" 图标
+- 扩展列表中看到 "AI Command Sync"
+- 状态栏右下角看到 "$(cloud-download) AI Command Sync" 图标
 
 ### 方式二：从 VSIX 文件安装
 
@@ -100,10 +100,10 @@ Cursor Sync
 导航到 `.vsix` 文件所在目录，然后运行：
 
 ```bash
-code --install-extension cursor-sync-1.0.0.vsix
+code --install-extension ai-command-sync-1.0.0.vsix
 ```
 
-将 `cursor-sync-1.0.0.vsix` 替换为您的实际文件名。
+将 `ai-command-sync-1.0.0.vsix` 替换为您的实际文件名。
 
 ##### 步骤 3: 重启 VSCode
 
@@ -131,7 +131,7 @@ mkdir temp-extension
 cd temp-extension
 
 # 解压 VSIX (重命名为 .zip)
-unzip ../cursor-sync-1.0.0.vsix
+unzip ../ai-command-sync-1.0.0.vsix
 
 # 或使用 7-Zip、WinRAR 等工具解压
 ```
@@ -142,10 +142,10 @@ unzip ../cursor-sync-1.0.0.vsix
 
 ```bash
 # Windows (PowerShell)
-Copy-Item -Path ".\extension" -Destination "$env:USERPROFILE\.vscode\extensions\genyuan.cursor-sync-1.0.0" -Recurse
+Copy-Item -Path ".\extension" -Destination "$env:USERPROFILE\.vscode\extensions\genyuan.ai-command-sync-1.0.0" -Recurse
 
 # macOS/Linux
-cp -r ./extension ~/.vscode/extensions/genyuan.cursor-sync-1.0.0
+cp -r ./extension ~/.vscode/extensions/genyuan.ai-command-sync-1.0.0
 ```
 
 ##### 步骤 4: 重启 VSCode
@@ -157,24 +157,24 @@ cp -r ./extension ~/.vscode/extensions/genyuan.cursor-sync-1.0.0
 ### 检查扩展是否已安装
 
 1. **打开扩展面板**: `Ctrl+Shift+X` (Mac: `Cmd+Shift+X`)
-2. **搜索**: 输入 "Cursor Sync"
+2. **搜索**: 输入 "AI Command Sync"
 3. **确认**: 应该看到扩展已安装，并显示 "已安装" 或 "禁用"/"卸载" 按钮
 
 ### 检查扩展是否激活
 
-1. **查看状态栏**: 右下角应显示 "$(cloud-download) Cursor Sync"
+1. **查看状态栏**: 右下角应显示 "$(cloud-download) AI Command Sync"
 2. **打开命令面板**: `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)
-3. **搜索命令**: 输入 "Cursor Sync"，应该看到相关命令：
-   - Cursor Sync: Sync Now
-   - Cursor Sync: View Sync History
-   - Cursor Sync: Open Settings
-   - Cursor Sync: Toggle Auto Sync
+3. **搜索命令**: 输入 "AI Command Sync"，应该看到相关命令：
+   - AI Command Sync: Sync Now
+   - AI Command Sync: View Sync History
+   - AI Command Sync: Open Settings
+   - AI Command Sync: Toggle Auto Sync
 
 ### 测试功能
 
 执行一次同步测试：
 
-1. 点击状态栏的 "Cursor Sync" 图标
+1. 点击状态栏的 "AI Command Sync" 图标
 2. 选择 "立即同步"
 3. 观察同步过程和结果通知
 
@@ -184,7 +184,7 @@ cp -r ./extension ~/.vscode/extensions/genyuan.cursor-sync-1.0.0
 
 ### 默认配置
 
-Cursor Sync 开箱即用，默认配置为：
+AI Command Sync 开箱即用，默认配置为：
 
 ```json
 {
@@ -206,8 +206,8 @@ Cursor Sync 开箱即用，默认配置为：
 #### 步骤 1: 打开设置
 
 - **方式 A**: 点击状态栏图标 → 选择 "打开设置"
-- **方式 B**: `Ctrl+,` (Mac: `Cmd+,`) → 搜索 "Cursor Sync"
-- **方式 C**: 命令面板 → "Cursor Sync: Open Settings"
+- **方式 B**: `Ctrl+,` (Mac: `Cmd+,`) → 搜索 "AI Command Sync"
+- **方式 C**: 命令面板 → "AI Command Sync: Open Settings"
 
 #### 步骤 2: 修改配置
 
@@ -248,7 +248,7 @@ Cursor Sync 开箱即用，默认配置为：
 
 **解决方案**:
 1. 重启 VSCode
-2. 检查扩展是否被禁用：扩展面板 → Cursor Sync → 点击 "启用"
+2. 检查扩展是否被禁用：扩展面板 → AI Command Sync → 点击 "启用"
 3. 查看输出面板是否有错误信息：`Ctrl+Shift+U` → 选择 "Extension Host"
 
 ### 问题 3: Git 未找到
@@ -300,7 +300,7 @@ which git
 
 您也可以手动检查更新：
 1. 打开扩展面板
-2. 找到 Cursor Sync
+2. 找到 AI Command Sync
 3. 如果有更新，会显示 "更新" 按钮
 4. 点击更新并重启 VSCode
 
@@ -318,7 +318,7 @@ which git
 #### 步骤 1: 卸载扩展
 
 1. 打开扩展面板: `Ctrl+Shift+X` (Mac: `Cmd+Shift+X`)
-2. 找到 Cursor Sync
+2. 找到 AI Command Sync
 3. 点击 "卸载" 按钮
 4. 重启 VSCode
 
@@ -328,7 +328,7 @@ which git
 
 **清理用户设置**:
 1. 打开设置: `Ctrl+,` (Mac: `Cmd+,`)
-2. 搜索 "Cursor Sync"
+2. 搜索 "AI Command Sync"
 3. 将所有配置恢复为默认值或删除
 
 **清理全局状态** (同步历史等):
@@ -357,7 +357,7 @@ rm -rf .cursor/commands
    - [DEVELOPMENT.md](DEVELOPMENT.md) - 开发者指南
 
 2. **提交问题**:
-   - GitHub Issues: [https://github.com/ApolloNaco/cursor-sync/issues](https://github.com/ApolloNaco/cursor-sync/issues)
+   - GitHub Issues: [https://github.com/ApolloNaco/ai-command-sync/issues](https://github.com/ApolloNaco/ai-command-sync/issues)
 
 3. **联系作者**:
    - 掘金: [Genyuan的AI工程](https://juejin.cn/user/Genyuan的AI工程)
