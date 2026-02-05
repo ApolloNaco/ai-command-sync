@@ -34,7 +34,7 @@ export class SyncManager {
     try {
       // Validate configuration
       if (!config.gitRepo || config.gitRepo.trim() === '') {
-        throw new Error('Git repository URL is not configured. Please set cursorSync.gitRepo in settings.');
+        throw new Error('Git repository URL is not configured. Please set aiCommandSync.gitRepo in settings.');
       }
 
       // Get workspace folder
@@ -72,7 +72,7 @@ export class SyncManager {
       if (!fs.existsSync(remotePath)) {
         throw new Error(
           `Remote path "${config.remotePath}" does not exist in repository.\n\n` +
-          'Please check the cursorSync.remotePath setting.'
+          'Please check the aiCommandSync.remotePath setting.'
         );
       }
 
@@ -180,7 +180,7 @@ export class SyncManager {
    * Get sync history
    */
   public getHistory(): SyncHistoryEntry[] {
-    return this.context.globalState.get<SyncHistoryEntry[]>('cursorSync.history', []);
+    return this.context.globalState.get<SyncHistoryEntry[]>('aiCommandSync.history', []);
   }
 
   /**
@@ -200,14 +200,14 @@ export class SyncManager {
       history.splice(this.maxHistoryEntries);
     }
 
-    await this.context.globalState.update('cursorSync.history', history);
+    await this.context.globalState.update('aiCommandSync.history', history);
   }
 
   /**
    * Clear sync history
    */
   public async clearHistory(): Promise<void> {
-    await this.context.globalState.update('cursorSync.history', []);
+    await this.context.globalState.update('aiCommandSync.history', []);
   }
 
   /**

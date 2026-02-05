@@ -41,61 +41,61 @@
   "contributes": {
     "commands": [
       {
-        "command": "cursorSync.syncNow",
-        "title": "Cursor Sync: Sync Now"
+        "command": "aiCommandSync.syncNow",
+        "title": "AI Command Sync: Sync Now"
       },
       {
-        "command": "cursorSync.viewHistory",
-        "title": "Cursor Sync: View Sync History"
+        "command": "aiCommandSync.viewHistory",
+        "title": "AI Command Sync: View Sync History"
       },
       {
-        "command": "cursorSync.openSettings",
-        "title": "Cursor Sync: Open Settings"
+        "command": "aiCommandSync.openSettings",
+        "title": "AI Command Sync: Open Settings"
       },
       {
-        "command": "cursorSync.toggleAutoSync",
-        "title": "Cursor Sync: Toggle Auto Sync"
+        "command": "aiCommandSync.toggleAutoSync",
+        "title": "AI Command Sync: Toggle Auto Sync"
       }
     ],
     "configuration": {
-      "title": "Cursor Sync",
+      "title": "AI Command Sync",
       "properties": {
-        "cursorSync.autoSync": {
+        "aiCommandSync.autoSync": {
           "type": "boolean",
           "default": false,
           "description": "Enable automatic synchronization"
         },
-        "cursorSync.autoSyncInterval": {
+        "aiCommandSync.autoSyncInterval": {
           "type": "number",
           "default": 7,
           "description": "Auto sync interval in days"
         },
-        "cursorSync.showNotification": {
+        "aiCommandSync.showNotification": {
           "type": "boolean",
           "default": true,
           "description": "Show notifications after sync"
         },
-        "cursorSync.enablePrompt": {
+        "aiCommandSync.enablePrompt": {
           "type": "boolean",
           "default": true,
           "description": "Show sync prompt on startup"
         },
-        "cursorSync.gitRepo": {
+        "aiCommandSync.gitRepo": {
           "type": "string",
           "default": "",
           "description": "Git repository URL (required: configure your own repository)"
         },
-        "cursorSync.remotePath": {
+        "aiCommandSync.remotePath": {
           "type": "string",
           "default": "cursor/commands",
           "description": "Remote path in the repository"
         },
-        "cursorSync.localPath": {
+        "aiCommandSync.localPath": {
           "type": "string",
           "default": ".cursor/commands",
           "description": "Local path relative to workspace"
         },
-        "cursorSync.branch": {
+        "aiCommandSync.branch": {
           "type": "string",
           "default": "master",
           "description": "Git branch to sync from"

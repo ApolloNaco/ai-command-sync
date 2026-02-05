@@ -16,7 +16,7 @@ let extensionContext: vscode.ExtensionContext;
  * Activate the extension
  */
 export async function activate(context: vscode.ExtensionContext) {
-  console.log('Cursor Sync extension is now active!');
+  console.log('AI Command Sync extension is now active!');
 
   // Save context
   extensionContext = context;
@@ -63,35 +63,35 @@ export async function activate(context: vscode.ExtensionContext) {
 function registerCommands(context: vscode.ExtensionContext) {
   // Sync now command
   context.subscriptions.push(
-    vscode.commands.registerCommand('cursorSync.syncNow', async () => {
+    vscode.commands.registerCommand('aiCommandSync.syncNow', async () => {
       await performSync();
     })
   );
 
   // View history command
   context.subscriptions.push(
-    vscode.commands.registerCommand('cursorSync.viewHistory', async () => {
+    vscode.commands.registerCommand('aiCommandSync.viewHistory', async () => {
       await showSyncHistory();
     })
   );
 
   // Open settings command
   context.subscriptions.push(
-    vscode.commands.registerCommand('cursorSync.openSettings', () => {
-      vscode.commands.executeCommand('workbench.action.openSettings', 'cursorSync');
+    vscode.commands.registerCommand('aiCommandSync.openSettings', () => {
+      vscode.commands.executeCommand('workbench.action.openSettings', 'aiCommandSync');
     })
   );
 
   // Toggle auto sync command
   context.subscriptions.push(
-    vscode.commands.registerCommand('cursorSync.toggleAutoSync', async () => {
+    vscode.commands.registerCommand('aiCommandSync.toggleAutoSync', async () => {
       await toggleAutoSync();
     })
   );
 
   // Show quick pick command
   context.subscriptions.push(
-    vscode.commands.registerCommand('cursorSync.showQuickPick', async () => {
+    vscode.commands.registerCommand('aiCommandSync.showQuickPick', async () => {
       const config = configManager.getConfig();
       const command = await statusBarManager.showQuickPick(config.autoSync);
       if (command) {
@@ -113,7 +113,7 @@ async function performSync(): Promise<void> {
 
     // Perform sync with progress
     const result = await notificationService.showProgress(
-      'Cursor Sync',
+      'AI Command Sync',
       async (progress) => {
         progress.report({ message: '正在克隆仓库...' });
         return await syncManager.sync(config);
@@ -200,13 +200,13 @@ async function showAutoPrompt(context: vscode.ExtensionContext): Promise<void> {
   }
 
   // Check if already prompted
-  const hasPrompted = context.workspaceState.get<boolean>('cursorSync.hasPrompted', false);
+  const hasPrompted = context.workspaceState.get<boolean>('aiCommandSync.hasPrompted', false);
   if (hasPrompted) {
     return;
   }
 
   // Mark as prompted
-  await context.workspaceState.update('cursorSync.hasPrompted', true);
+  await context.workspaceState.update('aiCommandSync.hasPrompted', true);
 
   // Show prompt
   const action = await notificationService.showAutoPrompt();
@@ -225,7 +225,7 @@ async function showAutoPrompt(context: vscode.ExtensionContext): Promise<void> {
       break;
     case 'later':
       // Reset the flag so it shows again next time
-      await context.workspaceState.update('cursorSync.hasPrompted', false);
+      await context.workspaceState.update('aiCommandSync.hasPrompted', false);
       break;
   }
 }
@@ -273,5 +273,5 @@ function stopAutoSyncTimer(): void {
  */
 export function deactivate() {
   stopAutoSyncTimer();
-  console.log('Cursor Sync extension is now deactivated');
+  console.log('AI Command Sync extension is now deactivated');
 }

@@ -43,24 +43,24 @@
 
 ### 📦 命令列表
 
-- `cursorSync.syncNow` - 立即执行同步
-- `cursorSync.viewHistory` - 查看同步历史记录
-- `cursorSync.openSettings` - 打开扩展设置
-- `cursorSync.toggleAutoSync` - 切换自动同步开关
-- `cursorSync.showQuickPick` - 显示快捷菜单（内部命令）
+- `aiCommandSync.syncNow` - 立即执行同步
+- `aiCommandSync.viewHistory` - 查看同步历史记录
+- `aiCommandSync.openSettings` - 打开扩展设置
+- `aiCommandSync.toggleAutoSync` - 切换自动同步开关
+- `aiCommandSync.showQuickPick` - 显示快捷菜单（内部命令）
 
 ### ⚙️ 配置项
 
 ```json
 {
-  "cursorSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
-  "cursorSync.remotePath": "cursor/commands",
-  "cursorSync.localPath": ".cursor/commands",
-  "cursorSync.branch": "master",
-  "cursorSync.autoSync": false,
-  "cursorSync.autoSyncInterval": 7,
-  "cursorSync.showNotification": true,
-  "cursorSync.enablePrompt": true
+  "aiCommandSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
+  "aiCommandSync.remotePath": "cursor/commands",
+  "aiCommandSync.localPath": ".cursor/commands",
+  "aiCommandSync.branch": "master",
+  "aiCommandSync.autoSync": false,
+  "aiCommandSync.autoSyncInterval": 7,
+  "aiCommandSync.showNotification": true,
+  "aiCommandSync.enablePrompt": true
 }
 ```
 

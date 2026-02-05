@@ -97,24 +97,24 @@
 
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `cursorSync.gitRepo` | string | `""` | Git 仓库地址（必填：配置你自己的仓库） |
-| `cursorSync.remotePath` | string | `cursor/commands` | 仓库中的远程路径 |
-| `cursorSync.localPath` | string | `.cursor/commands` | 本地同步路径（相对于工作区） |
-| `cursorSync.branch` | string | `master` | Git 分支名称 |
+| `aiCommandSync.gitRepo` | string | `""` | Git 仓库地址（必填：配置你自己的仓库） |
+| `aiCommandSync.remotePath` | string | `cursor/commands` | 仓库中的远程路径 |
+| `aiCommandSync.localPath` | string | `.cursor/commands` | 本地同步路径（相对于工作区） |
+| `aiCommandSync.branch` | string | `master` | Git 分支名称 |
 
 ### 自动同步配置
 
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `cursorSync.autoSync` | boolean | `false` | 是否启用自动同步 |
-| `cursorSync.autoSyncInterval` | number | `7` | 自动同步间隔（天） |
+| `aiCommandSync.autoSync` | boolean | `false` | 是否启用自动同步 |
+| `aiCommandSync.autoSyncInterval` | number | `7` | 自动同步间隔（天） |
 
 ### 通知配置
 
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `cursorSync.showNotification` | boolean | `true` | 同步完成后是否显示通知 |
-| `cursorSync.enablePrompt` | boolean | `true` | 启动时是否显示同步提示 |
+| `aiCommandSync.showNotification` | boolean | `true` | 同步完成后是否显示通知 |
+| `aiCommandSync.enablePrompt` | boolean | `true` | 启动时是否显示同步提示 |
 
 ## 🔍 工作原理
 
@@ -148,13 +148,13 @@ A: 常见原因包括：
 
 ### Q: 如何使用自己的 Git 仓库？
 
-A: 在设置中修改 `cursorSync.gitRepo` 为您的仓库地址，并相应调整 `remotePath` 和 `branch` 配置。
+A: 在设置中修改 `aiCommandSync.gitRepo` 为您的仓库地址，并相应调整 `remotePath` 和 `branch` 配置。
 
 ### Q: 如何关闭启动提示？
 
 A: 有两种方式：
 1. 在提示弹窗中选择 "不再提示"
-2. 在设置中将 `cursorSync.enablePrompt` 设为 `false`
+2. 在设置中将 `aiCommandSync.enablePrompt` 设为 `false`
 
 ### Q: 自动同步的具体逻辑是什么？
 

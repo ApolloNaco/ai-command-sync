@@ -421,7 +421,7 @@ git push origin feature/your-feature-name
 ```typescript
 // src/syncManager.ts
 public async clearHistory(): Promise<void> {
-  await this.context.globalState.update('cursorSync.history', []);
+  await this.context.globalState.update('aiCommandSync.history', []);
 }
 ```
 
@@ -429,7 +429,7 @@ public async clearHistory(): Promise<void> {
 
 ```typescript
 context.subscriptions.push(
-  vscode.commands.registerCommand('cursorSync.clearHistory', async () => {
+  vscode.commands.registerCommand('aiCommandSync.clearHistory', async () => {
     const confirmed = await notificationService.confirm(
       '确定要清除所有同步历史吗？'
     );
@@ -448,7 +448,7 @@ context.subscriptions.push(
   "contributes": {
     "commands": [
       {
-        "command": "cursorSync.clearHistory",
+        "command": "aiCommandSync.clearHistory",
         "title": "AI Command Sync: Clear History"
       }
     ]
@@ -463,7 +463,7 @@ context.subscriptions.push(
 {
   label: '$(trash) 清除历史',
   description: '删除所有同步记录',
-  detail: 'cursorSync.clearHistory'
+  detail: 'aiCommandSync.clearHistory'
 }
 ```
 
@@ -597,7 +597,7 @@ console.log('Extension active:', ext?.isActive);
 ```typescript
 const commands = await vscode.commands.getCommands();
 console.log('Sync command registered:', 
-  commands.includes('cursorSync.syncNow'));
+  commands.includes('aiCommandSync.syncNow'));
 ```
 
 **检查配置**:

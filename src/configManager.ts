@@ -2,10 +2,10 @@ import * as vscode from 'vscode';
 import { SyncConfig } from './types';
 
 /**
- * Configuration manager for Cursor Sync
+ * Configuration manager for AI Command Sync
  */
 export class ConfigManager {
-  private readonly configSection = 'cursorSync';
+  private readonly configSection = 'aiCommandSync';
 
   /**
    * Get current sync configuration

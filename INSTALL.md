@@ -188,14 +188,14 @@ AI Command Sync 开箱即用，默认配置为：
 
 ```json
 {
-  "cursorSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
-  "cursorSync.remotePath": "cursor/commands",
-  "cursorSync.localPath": ".cursor/commands",
-  "cursorSync.branch": "master",
-  "cursorSync.autoSync": false,
-  "cursorSync.autoSyncInterval": 7,
-  "cursorSync.showNotification": true,
-  "cursorSync.enablePrompt": true
+  "aiCommandSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
+  "aiCommandSync.remotePath": "cursor/commands",
+  "aiCommandSync.localPath": ".cursor/commands",
+  "aiCommandSync.branch": "master",
+  "aiCommandSync.autoSync": false,
+  "aiCommandSync.autoSyncInterval": 7,
+  "aiCommandSync.showNotification": true,
+  "aiCommandSync.enablePrompt": true
 }
 ```
 

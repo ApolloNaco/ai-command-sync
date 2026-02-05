@@ -14,7 +14,7 @@ export class StatusBarManager {
       vscode.StatusBarAlignment.Right,
       100
     );
-    this.statusBarItem.command = 'cursorSync.showQuickPick';
+    this.statusBarItem.command = 'aiCommandSync.showQuickPick';
     this.updateStatusBar();
     this.statusBarItem.show();
   }
@@ -36,7 +36,7 @@ export class StatusBarManager {
   private updateStatusBar(): void {
     switch (this.currentStatus) {
       case SyncStatus.NotSynced:
-        this.statusBarItem.text = '$(cloud-download) Cursor Sync';
+        this.statusBarItem.text = '$(cloud-download) AI Command Sync';
         this.statusBarItem.tooltip = '点击查看同步选项';
         this.statusBarItem.backgroundColor = undefined;
         this.statusBarItem.color = undefined;
@@ -118,22 +118,22 @@ export class StatusBarManager {
       {
         label: '$(sync) 立即同步',
         description: '手动执行同步',
-        detail: 'cursorSync.syncNow'
+        detail: 'aiCommandSync.syncNow'
       },
       {
         label: '$(history) 查看同步历史',
         description: '查看最近的同步记录',
-        detail: 'cursorSync.viewHistory'
+        detail: 'aiCommandSync.viewHistory'
       },
       {
         label: '$(gear) 打开设置',
-        description: '配置 Cursor Sync',
-        detail: 'cursorSync.openSettings'
+        description: '配置 AI Command Sync',
+        detail: 'aiCommandSync.openSettings'
       },
       {
         label: autoSyncEnabled ? '$(debug-pause) 关闭自动同步' : '$(debug-start) 启用自动同步',
         description: `当前状态：${autoSyncEnabled ? '已启用' : '已禁用'}`,
-        detail: 'cursorSync.toggleAutoSync'
+        detail: 'aiCommandSync.toggleAutoSync'
       }
     ];
 

@@ -22,7 +22,7 @@ export class NotificationService {
       if (selection === '查看日志') {
         vscode.commands.executeCommand('workbench.action.output.toggleOutput');
       } else if (selection === '重试') {
-        vscode.commands.executeCommand('cursorSync.syncNow');
+        vscode.commands.executeCommand('aiCommandSync.syncNow');
       }
     });
   }
@@ -51,7 +51,7 @@ export class NotificationService {
    */
   public async showAutoPrompt(): Promise<'sync' | 'later' | 'auto' | 'never' | undefined> {
     const result = await vscode.window.showInformationMessage(
-      'Cursor Sync: 检测到您的自定义命令可能需要同步。',
+      'AI Command Sync: 检测到您的自定义命令可能需要同步。',
       '立即同步',
       '稍后提醒',
       '启用自动同步',
@@ -77,11 +77,11 @@ export class NotificationService {
    */
   public showConfigError(message: string): void {
     vscode.window.showErrorMessage(
-      `Cursor Sync 配置错误：${message}`,
+      `AI Command Sync 配置错误：${message}`,
       '打开设置'
     ).then(selection => {
       if (selection === '打开设置') {
-        vscode.commands.executeCommand('cursorSync.openSettings');
+        vscode.commands.executeCommand('aiCommandSync.openSettings');
       }
     });
   }
@@ -90,21 +90,21 @@ export class NotificationService {
    * Show info message
    */
   public showInfo(message: string): void {
-    vscode.window.showInformationMessage(`Cursor Sync: ${message}`);
+    vscode.window.showInformationMessage(`AI Command Sync: ${message}`);
   }
 
   /**
    * Show warning message
    */
   public showWarning(message: string): void {
-    vscode.window.showWarningMessage(`Cursor Sync: ${message}`);
+    vscode.window.showWarningMessage(`AI Command Sync: ${message}`);
   }
 
   /**
    * Show error message
    */
   public showError(message: string): void {
-    vscode.window.showErrorMessage(`Cursor Sync: ${message}`);
+    vscode.window.showErrorMessage(`AI Command Sync: ${message}`);
   }
 
   /**

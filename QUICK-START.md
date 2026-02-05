@@ -102,16 +102,16 @@ $(debug-start) 启用自动同步
 ```json
 {
   // 您的 Git 仓库地址
-  "cursorSync.gitRepo": "https://github.com/YOUR_USERNAME/YOUR_REPO.git",
+  "aiCommandSync.gitRepo": "https://github.com/YOUR_USERNAME/YOUR_REPO.git",
   
   // 仓库中的路径
-  "cursorSync.remotePath": "cursor/commands",
+  "aiCommandSync.remotePath": "cursor/commands",
   
   // 本地同步路径（相对于工作区）
-  "cursorSync.localPath": ".cursor/commands",
+  "aiCommandSync.localPath": ".cursor/commands",
   
   // 分支
-  "cursorSync.branch": "main"
+  "aiCommandSync.branch": "main"
 }
 ```
 
@@ -191,10 +191,10 @@ $(debug-start) 启用自动同步
 ```json
 {
   // 只同步 commands 子目录
-  "cursorSync.remotePath": "cursor/commands/production",
+  "aiCommandSync.remotePath": "cursor/commands/production",
   
   // 或只同步特定项目
-  "cursorSync.remotePath": "projects/web/cursor"
+  "aiCommandSync.remotePath": "projects/web/cursor"
 }
 ```
 
@@ -214,7 +214,7 @@ AI Command Sync **不会删除**本地独有文件，所以您可以：
 
 ```json
 {
-  "cursorSync.showNotification": false
+  "aiCommandSync.showNotification": false
 }
 ```
 
@@ -222,7 +222,7 @@ AI Command Sync **不会删除**本地独有文件，所以您可以：
 
 ```json
 {
-  "cursorSync.enablePrompt": false
+  "aiCommandSync.enablePrompt": false
 }
 ```
 

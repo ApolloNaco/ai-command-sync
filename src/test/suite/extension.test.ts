@@ -11,11 +11,11 @@ suite('Extension Test Suite', () => {
   test('Should register all commands', async () => {
     const commands = await vscode.commands.getCommands();
     
-    assert.ok(commands.includes('cursorSync.syncNow'));
-    assert.ok(commands.includes('cursorSync.viewHistory'));
-    assert.ok(commands.includes('cursorSync.openSettings'));
-    assert.ok(commands.includes('cursorSync.toggleAutoSync'));
-    assert.ok(commands.includes('cursorSync.showQuickPick'));
+    assert.ok(commands.includes('aiCommandSync.syncNow'));
+    assert.ok(commands.includes('aiCommandSync.viewHistory'));
+    assert.ok(commands.includes('aiCommandSync.openSettings'));
+    assert.ok(commands.includes('aiCommandSync.toggleAutoSync'));
+    assert.ok(commands.includes('aiCommandSync.showQuickPick'));
   });
 
   test('Extension should activate', async () => {

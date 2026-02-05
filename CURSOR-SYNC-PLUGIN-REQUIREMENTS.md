@@ -77,14 +77,14 @@
 ### 默认配置值
 ```json
 {
-  "cursorSync.autoSync": false,
-  "cursorSync.autoSyncInterval": 7,
-  "cursorSync.showNotification": true,
-  "cursorSync.enablePrompt": true,
-  "cursorSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
-  "cursorSync.remotePath": "cursor/commands",
-  "cursorSync.localPath": ".cursor/commands",
-  "cursorSync.branch": "master"
+  "aiCommandSync.autoSync": false,
+  "aiCommandSync.autoSyncInterval": 7,
+  "aiCommandSync.showNotification": true,
+  "aiCommandSync.enablePrompt": true,
+  "aiCommandSync.gitRepo": "https://github.com/ApolloNaco/AITools.git",
+  "aiCommandSync.remotePath": "cursor/commands",
+  "aiCommandSync.localPath": ".cursor/commands",
+  "aiCommandSync.branch": "master"
 }
 ```
 
@@ -108,11 +108,11 @@
 
 | 命令 ID | 命令名称 | 功能 |
 |---------|---------|------|
-| `cursorSync.syncNow` | AI Command Sync: Sync Now | 立即执行同步 |
-| `cursorSync.viewHistory` | AI Command Sync: View History | 查看同步历史 |
-| `cursorSync.openSettings` | AI Command Sync: Open Settings | 打开扩展设置 |
-| `cursorSync.toggleAutoSync` | AI Command Sync: Toggle Auto Sync | 切换自动同步开关 |
-| `cursorSync.showQuickPick` | （内部命令） | 显示快捷菜单 |
+| `aiCommandSync.syncNow` | AI Command Sync: Sync Now | 立即执行同步 |
+| `aiCommandSync.viewHistory` | AI Command Sync: View History | 查看同步历史 |
+| `aiCommandSync.openSettings` | AI Command Sync: Open Settings | 打开扩展设置 |
+| `aiCommandSync.toggleAutoSync` | AI Command Sync: Toggle Auto Sync | 切换自动同步开关 |
+| `aiCommandSync.showQuickPick` | （内部命令） | 显示快捷菜单 |
 
 ---
 
@@ -379,9 +379,9 @@ setTimeout(async () => {
 
 ### 2. 防止重复提示
 ```typescript
-const hasPrompted = context.workspaceState.get('cursorSync.hasPrompted', false);
+const hasPrompted = context.workspaceState.get('aiCommandSync.hasPrompted', false);
 if (hasPrompted) return;
-await context.workspaceState.update('cursorSync.hasPrompted', true);
+await context.workspaceState.update('aiCommandSync.hasPrompted', true);
 ```
 
 ### 3. MD5 文件比对
