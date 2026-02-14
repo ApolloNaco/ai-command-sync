@@ -3,10 +3,10 @@
   "displayName": "Cursor Sync",
   "description": "Sync custom commands for Cursor AI from Git repositories",
   "version": "1.0.0",
-  "publisher": "Genyuan",
+  "publisher": "ApolloNaco",
   "author": {
-    "name": "Genyuan",
-    "url": "https://juejin.cn/user/Genyuan的AI工程"
+    "name": "Naco",
+    "url": "https://juejin.cn/user/143390347639064"
   },
   "engines": {
     "vscode": "^1.80.0"

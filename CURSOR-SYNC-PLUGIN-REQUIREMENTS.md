@@ -66,10 +66,10 @@
   "displayName": "Cursor Sync",
   "description": "自动同步 Cursor 命令配置文件",
   "version": "1.0.0",
-  "publisher": "Genyuan",
+  "publisher": "ApolloNaco",
   "author": {
-    "name": "Genyuan",
-    "url": "https://juejin.cn/user/Genyuan的AI工程"
+    "name": "Naco",
+    "url": "https://juejin.cn/user/143390347639064"
   }
 }
 ```
@@ -290,8 +290,8 @@ node_modules/**/*.md
 ## 📤 发布要求
 
 ### 市场信息
-- **发布者**: Genyuan
-- **作者**: Genyuan的AI工程（掘金）
+- **发布者**: ApolloNaco
+- **作者**: Naco（掘金: NacoStack）
 - **仓库**: https://github.com/ApolloNaco/AITools.git
 
 ### 添加字段
@@ -463,7 +463,7 @@ try {
 5. **"同步逻辑：使用 simple-git 浅克隆仓库，用 MD5 比对文件，只复制新增或变更的文件，不删除本地独有文件"**
    - 说明同步逻辑
 
-6. **"发布者改为 Genyuan，默认仓库改为 https://github.com/ApolloNaco/AITools.git，远程路径改为 cursor/commands，作者信息添加掘金：Genyuan的AI工程"**
+6. **"发布者改为 ApolloNaco，默认仓库改为 https://github.com/ApolloNaco/AITools.git，远程路径改为 cursor/commands，作者信息添加掘金：NacoStack"**
    - 说明配置信息
 
 7. **"如何打包和发布到 VSCode Marketplace？"**

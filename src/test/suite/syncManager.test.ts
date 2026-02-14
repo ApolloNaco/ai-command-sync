@@ -10,7 +10,7 @@ suite('SyncManager Test Suite', () => {
   let context: vscode.ExtensionContext;
 
   setup(() => {
-    const ext = vscode.extensions.getExtension('Genyuan.cursor-sync');
+    const ext = vscode.extensions.getExtension('ApolloNaco.cursor-sync');
     context = ext?.exports?.context;
     if (context) {
       syncManager = new SyncManager(context);

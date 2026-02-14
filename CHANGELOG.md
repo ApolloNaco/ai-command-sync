@@ -167,7 +167,7 @@
 如果您有任何建议或发现问题，欢迎：
 
 - 提交 [GitHub Issue](https://github.com/ApolloNaco/cursor-sync/issues)
-- 访问 [掘金主页](https://juejin.cn/user/Genyuan的AI工程) 留言
+- 访问 [掘金主页](https://juejin.cn/user/143390347639064) 留言
 - 发起 [Pull Request](https://github.com/ApolloNaco/cursor-sync/pulls)
 
 ---

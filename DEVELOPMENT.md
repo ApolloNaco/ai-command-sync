@@ -588,7 +588,7 @@ outputChannel.show();
 **检查扩展是否激活**:
 
 ```typescript
-const ext = vscode.extensions.getExtension('Genyuan.cursor-sync');
+const ext = vscode.extensions.getExtension('ApolloNaco.cursor-sync');
 console.log('Extension active:', ext?.isActive);
 ```
 
@@ -868,7 +868,7 @@ npx vsce publish
 ## 💬 联系方式
 
 - **GitHub**: [ApolloNaco](https://github.com/ApolloNaco)
-- **掘金**: [Genyuan的AI工程](https://juejin.cn/user/Genyuan的AI工程)
+- **掘金**: [NacoStack](https://juejin.cn/user/143390347639064)
 - **Email**: 通过 GitHub Issues 联系
 
 ---

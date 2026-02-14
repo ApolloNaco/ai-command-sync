@@ -305,4 +305,4 @@ rm -rf .cursor/commands
 
 如有任何问题，欢迎：
 - 提交 [Issue](https://github.com/ApolloNaco/cursor-sync/issues)
-- 访问 [掘金](https://juejin.cn/user/Genyuan的AI工程) 交流
+- 访问 [掘金](https://juejin.cn/user/143390347639064) 交流

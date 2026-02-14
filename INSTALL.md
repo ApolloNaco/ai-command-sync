@@ -48,7 +48,7 @@ Cursor Sync
 
 #### 步骤 3: 安装
 
-1. 在搜索结果中找到 "Cursor Sync" (作者: Genyuan)
+1. 在搜索结果中找到 "Cursor Sync" (作者: Naco)
 2. 点击 "Install" 按钮
 3. 等待安装完成（通常只需几秒钟）
 
@@ -360,7 +360,7 @@ rm -rf .cursor/commands
    - GitHub Issues: [https://github.com/ApolloNaco/cursor-sync/issues](https://github.com/ApolloNaco/cursor-sync/issues)
 
 3. **联系作者**:
-   - 掘金: [Genyuan的AI工程](https://juejin.cn/user/Genyuan的AI工程)
+   - 掘金: [NacoStack](https://juejin.cn/user/143390347639064)
 
 ## 📝 相关链接
 
