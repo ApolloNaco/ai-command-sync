@@ -2,7 +2,7 @@
   "name": "ai-command-sync",
   "displayName": "AI Command Sync",
   "description": "Sync AI custom commands and configurations from Git repositories",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "ApolloNaco",
   "author": {
     "name": "Naco",
