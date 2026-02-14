@@ -175,7 +175,7 @@ publish_to_openvsx() {
     if ovsx publish "$vsix_file" -p "$OVSX_TOKEN"; then
         print_success "发布成功！🎉"
         print_info "扩展将在几小时内出现在 OpenVSX 和 Cursor 市场"
-        print_info "查看扩展: https://open-vsx.org/extension/Genyuan/ai-command-sync"
+        print_info "查看扩展: https://open-vsx.org/extension/ApolloNaco/ai-command-sync"
     else
         print_error "发布失败"
         exit 1
@@ -233,7 +233,7 @@ show_summary() {
     echo ""
     
     print_info "链接:"
-    echo "  • OpenVSX: https://open-vsx.org/extension/Genyuan/ai-command-sync"
+    echo "  • OpenVSX: https://open-vsx.org/extension/ApolloNaco/ai-command-sync"
     echo "  • GitHub: https://github.com/ApolloNaco/ai-command-sync"
     echo ""
 }

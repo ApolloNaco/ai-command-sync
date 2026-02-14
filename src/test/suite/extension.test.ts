@@ -5,7 +5,7 @@ suite('Extension Test Suite', () => {
   vscode.window.showInformationMessage('Start all tests.');
 
   test('Extension should be present', () => {
-    assert.ok(vscode.extensions.getExtension('Genyuan.cursor-sync'));
+    assert.ok(vscode.extensions.getExtension('ApolloNaco.ai-command-sync'));
   });
 
   test('Should register all commands', async () => {
@@ -19,7 +19,7 @@ suite('Extension Test Suite', () => {
   });
 
   test('Extension should activate', async () => {
-    const ext = vscode.extensions.getExtension('Genyuan.cursor-sync');
+    const ext = vscode.extensions.getExtension('ApolloNaco.ai-command-sync');
     assert.ok(ext);
     await ext?.activate();
     assert.ok(ext?.isActive);

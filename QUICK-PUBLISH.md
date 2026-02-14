@@ -15,7 +15,7 @@ npm install -g ovsx
 # 使用 GitHub 登录，创建 Access Token
 
 # 3. 创建 namespace（只需要做一次）
-ovsx create-namespace Genyuan -p YOUR_TOKEN
+ovsx create-namespace ApolloNaco -p YOUR_TOKEN
 
 # 4. 设置环境变量（推荐）
 export OVSX_TOKEN="your-token-here"
@@ -154,7 +154,7 @@ npm run watch
 
 ```bash
 # 创建 namespace
-ovsx create-namespace Genyuan -p YOUR_TOKEN
+ovsx create-namespace ApolloNaco -p YOUR_TOKEN
 ```
 
 ### Q: 发布失败，提示 "Extension version already exists"
@@ -177,14 +177,14 @@ export OVSX_TOKEN="new-token"
 **答**: 扩展发布后需要几小时到一天的时间才会同步到 Cursor 市场。
 
 在此期间，你可以：
-1. 直接从 OpenVSX 下载 VSIX：https://open-vsx.org/extension/Genyuan/ai-command-sync
+1. 直接从 OpenVSX 下载 VSIX：https://open-vsx.org/extension/ApolloNaco/ai-command-sync
 2. 手动拖拽 VSIX 文件到 Cursor 安装
 
 ## 📚 相关链接
 
 - 详细发布指南：[PUBLISH.md](PUBLISH.md)
 - OpenVSX 市场：https://open-vsx.org/
-- 你的扩展：https://open-vsx.org/extension/Genyuan/ai-command-sync
+- 你的扩展：https://open-vsx.org/extension/ApolloNaco/ai-command-sync
 - GitHub 仓库：https://github.com/ApolloNaco/ai-command-sync
 
 ---

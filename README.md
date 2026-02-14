@@ -169,8 +169,8 @@ A: 启用自动同步后，扩展会：
 
 ## 👨‍💻 作者
 
-**Genyuan**
-- 掘金：[Genyuan的AI工程](https://juejin.cn/user/Genyuan的AI工程)
+**Naco**
+- 掘金：[NacoStack](https://juejin.cn/user/143390347639064)
 - GitHub: [ApolloNaco](https://github.com/ApolloNaco)
 
 ## 🙏 致谢

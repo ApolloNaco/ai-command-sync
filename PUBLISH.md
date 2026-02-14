@@ -66,7 +66,7 @@ ovsx --version
 
 ```bash
 # 创建 publisher namespace（替换 YOUR_TOKEN 为你的 access token）
-ovsx create-namespace Genyuan -p YOUR_TOKEN
+ovsx create-namespace ApolloNaco -p YOUR_TOKEN
 ```
 
 **注意**: 如果 namespace 已被占用，你需要：
@@ -119,7 +119,7 @@ ovsx publish -p YOUR_TOKEN
 
 ### 步骤 9: 验证发布
 
-1. 访问 https://open-vsx.org/extension/Genyuan/ai-command-sync
+1. 访问 https://open-vsx.org/extension/ApolloNaco/ai-command-sync
 2. 确认扩展信息显示正确
 3. 检查 README、图标、版本号等
 

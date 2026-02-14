@@ -74,7 +74,7 @@ npm install -g ovsx
 
 ```bash
 # 替换为你的 token
-ovsx create-namespace Genyuan -p YOUR_TOKEN
+ovsx create-namespace ApolloNaco -p YOUR_TOKEN
 ```
 
 #### 3.4 发布插件
@@ -125,7 +125,7 @@ git push origin v1.0.0
 等待 5-10 分钟，然后验证：
 
 ### 检查 OpenVSX
-访问: https://open-vsx.org/extension/Genyuan/ai-command-sync
+访问: https://open-vsx.org/extension/ApolloNaco/ai-command-sync
 
 ### 检查 Cursor 市场
 1. 打开 Cursor

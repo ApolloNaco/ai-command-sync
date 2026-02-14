@@ -80,7 +80,7 @@
   访问: https://open-vsx.org/
   使用 GitHub 登录
   创建 Access Token
-  $ ovsx create-namespace Genyuan -p YOUR_TOKEN
+  $ ovsx create-namespace ApolloNaco -p YOUR_TOKEN
   
   步骤4: 发布插件
   ────────────────────────
